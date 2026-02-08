@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataExpert | Konsultan Analisis Data S1 & S2 Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;1,8..60,600&display=swap');
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        .serif { font-family: 'Source Serif 4', serif; }
+        
+        .bg-luxury {
+            background-color: #ffffff;
+            background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px);
+            background-size: 40px 40px;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .premium-card {
+            background: white;
+            border: 1px solid #f1f5f9;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .premium-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px -15px rgba(30, 64, 175, 0.08);
+            border-color: #1e40af;
+        }
+
+        .btn-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            filter: brightness(1.1);
+            box-shadow: 0 10px 20px -5px rgba(30, 64, 175, 0.4);
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-luxury text-slate-900">
+
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-800 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">D</div>
+                <div class="hidden sm:block">
+                    <span class="font-extrabold text-lg tracking-tighter uppercase block leading-none">Data<span class="text-blue-700">Expert</span></span>
+                    <span class="text-[8px] font-bold tracking-[0.3em] text-slate-400 uppercase">Consulting Group</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#proses" class="hidden md:block text-sm font-bold text-slate-500 hover:text-blue-700 transition">Metodologi</a>
+                <a href="#order" class="btn-gradient text-white px-7 py-3 rounded-full font-bold text-sm active:scale-95 shadow-lg">
+                    Mulai Konsultasi
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-48 pb-32 px-6 overflow-hidden">
+        <div class="absolute top-20 right-[-10%] w-96 h-96 bg-blue-50 rounded-full blur-[100px] -z-10"></div>
+        <div class="absolute bottom-10 left-[-5%] w-72 h-72 bg-indigo-50 rounded-full blur-[80px] -z-10"></div>
+
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-800 border border-blue-100 text-[10px] font-extrabold uppercase tracking-[0.2em] mb-8">
+                    <span class="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span> Personal Academic Mentor
+                </div>
+                <h1 class="serif text-5xl md:text-7xl text-slate-900 leading-[1.1] mb-8 tracking-tight">
+                    Ubah Data Menjadi <br> <span class="text-blue-800 italic">Karya Ilmiah.</span>
+                </h1>
+                <p class="text-xl text-slate-500 leading-relaxed mb-12 max-w-xl mx-auto lg:mx-0">
+                    Bimbingan olah data <span class="font-bold text-slate-800">Skripsi & Tesis</span> dengan akurasi statistik tinggi. Kami memastikan Anda memahami setiap angka untuk menghadapi meja hijau.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
+                    <a href="#order" class="btn-gradient text-white px-12 py-5 font-bold rounded-2xl text-lg shadow-2xl flex items-center justify-center gap-3 group">
+                        Booking Jadwal <i class="fa-solid fa-calendar-check group-hover:rotate-12 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 relative w-full max-w-lg mx-auto">
+                <div class="floating bg-white p-10 rounded-[3rem] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.1)] border border-slate-100 relative z-10">
+                    <div class="flex justify-between items-center mb-10">
+                        <div class="bg-blue-50 p-4 rounded-2xl text-blue-700">
+                            <i class="fa-solid fa-chart-pie text-2xl"></i>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-[10px] font-black text-slate-300 uppercase tracking-widest">Client Satisfaction</p>
+                            <p class="text-3xl font-black text-blue-900 italic">99.9%</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center p-5 bg-slate-50 rounded-2xl">
+                            <span class="text-sm font-bold text-slate-600">Validitas & Reliabilitas</span>
+                            <i class="fa-solid fa-circle-check text-green-500"></i>
+                        </div>
+                        <div class="flex justify-between items-center p-5 bg-slate-50 rounded-2xl">
+                            <span class="text-sm font-bold text-slate-600">Standard Jurnal SINTA/Scopus</span>
+                            <i class="fa-solid fa-shield-halved text-blue-600"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-slate-900 text-white p-6 rounded-2xl shadow-2xl z-20">
+                    <p class="text-2xl font-bold">10th</p>
+                    <p class="text-[8px] font-bold uppercase tracking-[0.2em] text-blue-400">Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-24 px-6 bg-slate-50/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="premium-card p-12 rounded-[2.5rem] relative overflow-hidden group bg-white">
+                    <div class="absolute -top-4 -right-4 w-32 h-32 bg-blue-50 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-700"></div>
+                    <h3 class="text-blue-700 font-black uppercase tracking-[0.3em] text-[10px] mb-6">Level Sarjana</h3>
+                    <h4 class="serif text-4xl mb-8">Analisis Skripsi</h4>
+                    <ul class="space-y-5 text-slate-600 mb-10">
+                        <li class="flex items-center gap-4 text-sm font-medium"><i class="fa-solid fa-check-circle text-blue-600"></i> Regresi Linier Berganda</li>
+                        <li class="flex items-center gap-4 text-sm font-medium"><i class="fa-solid fa-check-circle text-blue-600"></i> Uji Asumsi Klasik Lengkap</li>
+                        <li class="flex items-center gap-4 text-sm font-medium"><i class="fa-solid fa-check-circle text-blue-600"></i> Interpretasi Hasil Sederhana</li>
+                    </ul>
+                    <p class="text-xs font-bold italic text-slate-400 border-t pt-6 tracking-wide">"Solusi tepat untuk kelulusan tepat waktu."</p>
+                </div>
+
+                <div class="premium-card p-12 rounded-[2.5rem] relative overflow-hidden group bg-slate-900 text-white">
+                    <div class="absolute -top-4 -right-4 w-32 h-32 bg-blue-900/50 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-700"></div>
+                    <h3 class="text-blue-400 font-black uppercase tracking-[0.3em] text-[10px] mb-6">Level Magister</h3>
+                    <h4 class="serif text-4xl mb-8">Analisis Tesis</h4>
+                    <ul class="space-y-5 text-slate-300 mb-10">
+                        <li class="flex items-center gap-4 text-sm font-medium"><i class="fa-solid fa-check-circle text-blue-400"></i> Structural Equation Modeling (SEM)</li>
+                        <li class="flex items-center gap-4 text-sm font-medium"><i class="fa-solid fa-check-circle text-blue-400"></i> Analisis Jalur (Path Analysis)</li>
+                        <li class="flex items-center gap-4 text-sm font-medium"><i class="fa-solid fa-check-circle text-blue-400"></i> Interpretasi Standar Publikasi</li>
+                    </ul>
+                    <p class="text-xs font-bold italic text-blue-300/50 border-t border-white/10 pt-6 tracking-wide">"Kedalaman analisis untuk standar Tesis profesional."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="serif text-4xl text-slate-900 mb-4 tracking-tight">Kisah Sukses Alumni</h2>
+                <div class="w-20 h-1 bg-blue-700 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="p-10 border border-slate-100 rounded-[2rem] hover:shadow-xl transition-shadow bg-slate-50/30">
+                    <div class="flex gap-1 text-amber-400 mb-6 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-10 leading-relaxed">"Penjelasan Bapak sangat mudah dimengerti bahkan untuk saya yang awam statistik. Sangat membantu saat sidang!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-800">AN</div>
+                        <div>
+                            <p class="font-bold text-sm">Andini Nurul</p>
+                            <p class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Alumni S2 Manajemen</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 border border-slate-100 rounded-[2rem] hover:shadow-xl transition-shadow bg-slate-50/30">
+                    <div class="flex gap-1 text-amber-400 mb-6 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-10 leading-relaxed">"Sangat cepat dan responsif. Revisi dari dosen pun dibantu arahannya. Terima kasih banyak DataExpert!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-slate-200 rounded-full flex items-center justify-center font-bold text-slate-800">BP</div>
+                        <div>
+                            <p class="font-bold text-sm">Bambang Pratama</p>
+                            <p class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Alumni S1 Akuntansi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-10 border border-slate-100 rounded-[2rem] hover:shadow-xl transition-shadow bg-slate-50/30">
+                    <div class="flex gap-1 text-amber-400 mb-6 text-xs">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-10 leading-relaxed">"Privasi data terjaga aman. Hasil olahan datanya sangat detail dan rapi. Benar-benar profesional."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white">RD</div>
+                        <div>
+                            <p class="font-bold text-sm">Rina Dwiyanti</p>
+                            <p class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Alumni S1 Psikologi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 border-y border-slate-100 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 mb-12 italic">Scientific Tools & Mastery</p>
+            <div class="flex flex-wrap justify-center gap-10 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-1000">
+                <span class="text-3xl font-black text-slate-900 tracking-tighter">SPSS</span>
+                <span class="text-3xl font-black text-slate-900 tracking-tighter">SmartPLS</span>
+                <span class="text-3xl font-black text-slate-900 tracking-tighter">EViews</span>
+                <span class="text-3xl font-black text-slate-900 tracking-tighter">STATA</span>
+                <span class="text-3xl font-black text-slate-900 tracking-tighter">AMOS</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="proses" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 text-center md:text-left">
+                <div class="max-w-md">
+                    <h2 class="serif text-4xl text-slate-900 mb-4 tracking-tight">Metodologi Kami</h2>
+                    <p class="text-slate-500">Alur kerja sistematis untuk hasil penelitian yang dapat dipertanggungjawabkan.</p>
+                </div>
+                <div class="bg-blue-50 text-blue-700 px-6 py-2 rounded-full font-bold text-xs border border-blue-100">
+                    Bimbingan Sampai Lulus
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="group">
+                    <div class="text-6xl font-black text-slate-100 mb-4 group-hover:text-blue-100 transition-colors">01</div>
+                    <h5 class="font-bold text-slate-900 mb-3">Review & Briefing</h5>
+                    <p class="text-xs text-slate-500 leading-relaxed">Diskusi awal mengenai kerangka pikir dan kelayakan data Anda.</p>
+                </div>
+                <div class="group">
+                    <div class="text-6xl font-black text-slate-100 mb-4 group-hover:text-blue-100 transition-colors">02</div>
+                    <h5 class="font-bold text-slate-900 mb-3">Olah Data</h5>
+                    <p class="text-xs text-slate-500 leading-relaxed">Proses analisis menggunakan software sesuai kebutuhan penelitian.</p>
+                </div>
+                <div class="group">
+                    <div class="text-6xl font-black text-slate-100 mb-4 group-hover:text-blue-100 transition-colors">03</div>
+                    <h5 class="font-bold text-slate-900 mb-3">Interpretasi</h5>
+                    <p class="text-xs text-slate-500 leading-relaxed">Penyusunan narasi hasil (Bab 4) agar mudah dibaca dan dipahami.</p>
+                </div>
+                <div class="group">
+                    <div class="text-6xl font-black text-slate-100 mb-4 group-hover:text-blue-100 transition-colors">04</div>
+                    <h5 class="font-bold text-slate-900 mb-3">Finalisasi</h5>
+                    <p class="text-xs text-slate-500 leading-relaxed">Penyerahan hasil akhir dan sesi diskusi bimbingan persiapan sidang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto bg-white border border-slate-100 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.08)] rounded-[3rem] overflow-hidden">
+            <div class="md:flex">
+                <div class="md:w-2/5 bg-slate-900 p-12 text-white flex flex-col justify-between">
+                    <div>
+                        <h2 class="serif text-4xl mb-6">Mulai <br> Projek Anda.</h2>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-12">Lengkapi data penelitian Anda, kami akan segera melakukan evaluasi awal secara gratis.</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center"><i class="fa-solid fa-lock text-blue-400"></i></div>
+                            <span class="text-xs font-bold uppercase tracking-widest">Kerahasiaan Data 100%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-3/5 p-12 md:p-16">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Nama Lengkap</label>
+                            <input type="text" id="name" class="w-full border-b-2 border-slate-100 py-3 outline-none focus:border-blue-700 transition font-semibold" placeholder="Nama Anda...">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Jenjang Studi</label>
+                            <select id="level" class="w-full border-b-2 border-slate-100 py-3 outline-none focus:border-blue-700 transition font-semibold cursor-pointer">
+                                <option>Skripsi (S1)</option>
+                                <option>Tesis (S2)</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Metode / Software</label>
+                            <input type="text" id="service" class="w-full border-b-2 border-slate-100 py-3 outline-none focus:border-blue-700 transition font-semibold" placeholder="Contoh: SPSS / SmartPLS">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Target Deadline</label>
+                            <input type="text" id="deadline" class="w-full border-b-2 border-slate-100 py-3 outline-none focus:border-blue-700 transition font-semibold" placeholder="Contoh: 1 Minggu">
+                        </div>
+                    </div>
+                    <div class="space-y-2 mb-12">
+                        <label class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Detail Masalah Penelitian</label>
+                        <textarea id="desc" rows="3" class="w-full border-b-2 border-slate-100 py-3 outline-none focus:border-blue-700 transition font-semibold resize-none" placeholder="Ceritakan kendala data Anda..."></textarea>
+                    </div>
+                    <button onclick="sendToWA()" class="w-full btn-gradient text-white py-5 rounded-2xl font-black shadow-xl active:scale-[0.98] flex justify-center items-center gap-4 tracking-[0.1em] text-xs uppercase">
+                        Kirim Permohonan Konsultasi <i class="fa-brands fa-whatsapp text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center px-6">
+        <div class="w-12 h-1 bg-slate-200 mx-auto mb-10"></div>
+        <p class="font-black text-slate-900 mb-2 uppercase tracking-[0.5em] text-[10px]">DataExpert Consulting</p>
+        <p class="text-[9px] text-slate-400 tracking-[0.2em] mb-12 italic uppercase">Empowering Researchers Since 2014</p>
+        <p class="text-[10px] text-slate-300">&copy; 2026 Crafted with Precision for Bapak. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function sendToWA() {
+            const name = document.getElementById('name').value;
+            const level = document.getElementById('level').value;
+            const service = document.getElementById('service').value;
+            const deadline = document.getElementById('deadline').value;
+            const desc = document.getElementById('desc').value;
+            const phone = "62895326737799"; // GANTI NO WA BAPAK DI SINI
+
+            if(!name || !desc) {
+                alert("Harap lengkapi detail pengajuan.");
+                return;
+            }
+
+            const message = `*REQUEST KONSULTASI AKADEMIK*%0A------------------------------------%0A*Nama:* ${name}%0A*Jenjang:* ${level}%0A*Software:* ${service}%0A*Deadline:* ${deadline}%0A*Keterangan:* ${desc}%0A------------------------------------%0AMohon jadwal ketersediaan Bapak untuk diskusi lebih lanjut.`;
+            window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
